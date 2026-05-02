@@ -6,11 +6,14 @@ import { Menu, X } from "lucide-react";
 import { HUB } from "@/lib/site";
 
 const nav = [
-  { href: "/", label: "Forside" },
+  { href: "/", label: "MJ Universe" },
   { href: "/mariell/", label: "Mariell" },
   { href: "/jhonatan/", label: "Jhonatan" },
-  { href: "/univers/", label: "Universet" },
-  { href: "/kontakt/", label: "Kontakt" },
+  { href: "/community/", label: "Community" },
+  { href: "/polls/", label: "Live / Polls" },
+  { href: "/shop/", label: "Shop / Store" },
+  { href: "/vip/", label: "VIP" },
+  { href: "/account/", label: "Konto" },
 ] as const;
 
 export function SiteHeader() {
@@ -18,28 +21,25 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-ink/75 backdrop-blur-xl">
-      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between gap-6 px-5 md:px-8">
-        <Link
-          href="/"
-          className="font-display text-lg font-semibold tracking-tight text-white md:text-xl"
-        >
-          MJ Universe
+      <div className="mx-auto flex min-h-[4.25rem] max-w-[1320px] items-center justify-between gap-6 px-5 py-2 md:px-8">
+        <Link href="/" className="inline-flex items-center gap-3">
+          <img src="/images/logo.png" alt="MJ Universe logo" className="h-9 w-9 rounded-lg object-cover" />
+          <span className="font-display text-base font-semibold leading-tight tracking-tight text-white md:text-xl">
+            MJ Universe
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden flex-1 items-center justify-end gap-1 md:flex">
           {nav.map((item) => (
             <Link
-              key={item.href}
+              key={`${item.href}-${item.label}`}
               href={item.href}
-              className="rounded-full px-3 py-1.5 text-sm text-white/65 transition hover:bg-white/5 hover:text-white"
+              className="rounded-full px-3 py-1.5 text-xs font-medium text-white/65 transition hover:bg-white/5 hover:text-white"
             >
               {item.label}
             </Link>
           ))}
-          <a
-            href={HUB}
-            className="ml-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:bg-white/90"
-          >
+          <a href={HUB} className="ml-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-ink transition hover:bg-white/90">
             Åpne hub
           </a>
         </nav>

@@ -1,5 +1,5 @@
 import { social } from "@/lib/site";
-import { Youtube, Ghost } from "lucide-react";
+import { Youtube, Ghost, Instagram, Share2 } from "lucide-react";
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -11,7 +11,9 @@ function TikTokIcon({ className }: { className?: string }) {
 
 const items = [
   { label: "YouTube", href: social.youtube, icon: Youtube },
-  { label: "Snapchat", href: social.snapchat, icon: Ghost },
+  { label: "Snapchat (add)", href: social.snapchat, icon: Ghost },
+  { label: "Snapchat (share)", href: social.snapchatShare, icon: Share2 },
+  { label: "Instagram", href: social.instagram, icon: Instagram },
   { label: "TikTok", href: social.tiktok, icon: TikTokIcon },
 ] as const;
 
@@ -21,7 +23,7 @@ export function SocialRow() {
       <div className="rounded-3xl border border-line bg-gradient-to-br from-white/[0.04] to-transparent px-6 py-10 md:px-10 md:py-12">
         <h2 className="font-display text-xl font-semibold text-white md:text-2xl">Følg med der du er</h2>
         <p className="mt-2 max-w-xl text-sm text-mist">
-          Offisielle kanaler for MJ Universe. Oppdater TikTok-lenken i kodebasen når profilen er bekreftet.
+          Offisielle kanaler for MJ Universe.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           {items.map(({ label, href, icon: Icon }) => (

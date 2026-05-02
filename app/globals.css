@@ -26,20 +26,59 @@ body {
   @apply bg-ink font-sans text-white antialiased;
   text-rendering: optimizeLegibility;
   background-image:
-    radial-gradient(ellipse 120% 80% at 50% -30%, rgba(232, 93, 76, 0.12), transparent 55%),
-    radial-gradient(ellipse 90% 60% at 100% 20%, rgba(94, 200, 212, 0.08), transparent 50%),
-    radial-gradient(ellipse 70% 50% at 0% 80%, rgba(255, 255, 255, 0.04), transparent 45%),
-    linear-gradient(180deg, #060607 0%, #0a0a0c 40%, #060607 100%);
+    radial-gradient(ellipse 100% 62% at 50% -10%, rgba(72, 116, 255, 0.18), transparent 58%),
+    radial-gradient(ellipse 68% 44% at 86% 84%, rgba(26, 225, 206, 0.12), transparent 62%),
+    linear-gradient(180deg, #05070b 0%, #080d14 52%, #05070b 100%);
   min-height: 100dvh;
 }
 
-.v2-grain {
-  pointer-events: none;
+.v2-global-fx {
   position: fixed;
   inset: 0;
-  z-index: 50;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.v2-global-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.42;
+}
+
+.v2-global-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(46px);
+  opacity: 0.22;
+  animation: globalOrbFloat 18s ease-in-out infinite alternate;
+}
+
+.v2-global-orb-a {
+  width: 34vw;
+  height: 34vw;
+  top: -14%;
+  left: -8%;
+  background: radial-gradient(circle, rgba(94, 164, 255, 0.9) 0%, transparent 74%);
+}
+
+.v2-global-orb-b {
+  width: 36vw;
+  height: 36vw;
+  right: -10%;
+  bottom: -14%;
+  background: radial-gradient(circle, rgba(44, 224, 205, 0.78) 0%, transparent 74%);
+  animation-duration: 22s;
+}
+
+.v2-sidebar {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(10px);
+  padding: 0.9rem;
 }
 
 .v2-stagger > * {
@@ -77,10 +116,92 @@ body {
   }
 }
 
+@keyframes globalOrbFloat {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(4vw, 2.5vh);
+  }
+}
+
 .v2-prose p {
   @apply text-mist leading-relaxed;
 }
 
 .v2-prose p + p {
   @apply mt-4;
+}
+
+.v2-network-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.v2-hero-shell {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(10px);
+  padding: clamp(1.1rem, 2.5vw, 2.1rem);
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 1.2rem;
+}
+
+.v2-hero-creators {
+  align-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: rgba(3, 7, 17, 0.7);
+  padding: 1.1rem;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.v2-hero-person {
+  text-align: center;
+}
+
+.v2-hero-person img {
+  width: 102px;
+  height: 102px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin: 0 auto 0.55rem;
+}
+
+.v2-hero-person h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #eaf2ff;
+}
+
+.v2-hero-person p {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  color: #a8b8d9;
+}
+
+@media (max-width: 1024px) {
+  .v2-hero-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v2-global-orb {
+    animation: none !important;
+  }
+
+  .v2-global-canvas {
+    opacity: 0.25;
+  }
 }

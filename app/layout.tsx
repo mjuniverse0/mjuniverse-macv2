@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Syne } from "next/font/google";
 import "./globals.css";
+import { AppSidebar } from "@/components/app-sidebar";
 import { SiteFooter } from "@/components/site-footer";
+import { GlobalFx } from "@/components/global-fx";
 import { SiteHeader } from "@/components/site-header";
 
 const display = Syne({
@@ -45,10 +47,17 @@ export default function RootLayout({
   return (
     <html lang="nb" className={`${display.variable} ${sans.variable}`}>
       <body className="relative min-h-dvh">
-        <div className="v2-grain" aria-hidden />
+        <GlobalFx />
         <div className="relative z-10 flex min-h-dvh flex-col">
           <SiteHeader />
-          <main className="flex-1">{children}</main>
+          <div className="mx-auto flex w-full max-w-[1380px] flex-1 px-4 pb-6 pt-4 md:px-6">
+            <div className="grid w-full gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
+              <div className="hidden lg:block">
+                <AppSidebar />
+              </div>
+              <main className="min-w-0">{children}</main>
+            </div>
+          </div>
           <SiteFooter />
         </div>
       </body>

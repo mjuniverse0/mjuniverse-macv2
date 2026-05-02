@@ -3,9 +3,11 @@ export const HUB = "https://mj-universe.net" as const;
 
 export const social = {
   snapchat: "https://www.snapchat.com/add/mj_universe",
+  snapchatShare:
+    "https://www.snapchat.com/add/mj_universe?share_id=5JV2bdenR46VRWEZGr03FQ&locale=nb_NO",
   youtube: "https://www.youtube.com/@MJUniverse-1",
-  /** Oppdater når offisiell TikTok-URL er bekreftet */
-  tiktok: "https://www.tiktok.com/",
+  instagram: "https://www.instagram.com/mj_universe1",
+  tiktok: "https://www.tiktok.com/@mariellberntz",
 } as const;
 
 export type HubDomain = {
