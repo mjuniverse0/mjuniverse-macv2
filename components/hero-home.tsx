@@ -106,13 +106,13 @@ export function HeroHome() {
               finner du sanntidsdata, video og hurtiglenker.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/account/"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink shadow-lg shadow-black/30 transition hover:bg-white/90"
               >
                 Logg inn / konto
                 <ArrowRight className="h-4 w-4" aria-hidden />
-              </a>
+              </Link>
               <Link
                 href="/univers/"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/[0.04] px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/30 hover:bg-white/[0.08]"
