@@ -5,7 +5,7 @@ import { HUB } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Mariell Berntzen",
   description:
-    "Skaper og profil for MJ Universe — TikTok-stemme med fokus på ekte historier og transformasjon.",
+    "Skaper og profil for MJ Universe - TikTok-stemme med fokus på ekte historier og transformasjon.",
 };
 
 export default function MariellPage() {
@@ -38,7 +38,7 @@ export default function MariellPage() {
           <section className="rounded-2xl border border-line bg-panel/50 p-6 md:p-8">
             <h2 className="font-display text-lg font-semibold text-white">Om stemmen</h2>
             <p className="mt-3">
-              Mariell bygger ærlig, motiverende innhold forankret i virkelig liv — mellomrommet der det er vanskelig,
+              Mariell bygger ærlig, motiverende innhold forankret i virkelig liv - mellomrommet der det er vanskelig,
               små seire som teller, og ritualene som holder energien oppe når hverdagen bråker.
             </p>
           </section>
@@ -46,7 +46,7 @@ export default function MariellPage() {
           <section className="rounded-2xl border border-coral/25 bg-gradient-to-br from-coral/10 to-transparent p-6 md:p-8">
             <h2 className="font-display text-lg font-semibold text-white">Transformasjon</h2>
             <p className="mt-3">
-              En tydelig offentlig reise på TikTok — med et voksende fellesskap — kjent for en sterk
+              En tydelig offentlig reise på TikTok - med et voksende fellesskap - kjent for en sterk
               vekttransformasjon og historiefortelling som føles ekte, ikke polert tomrom.
             </p>
           </section>

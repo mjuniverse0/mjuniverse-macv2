@@ -2,7 +2,7 @@
   "name": "mj-universe-macv2",
   "version": "2.0.0",
   "private": true,
-  "description": "Referanse-build — hovedopplevelsen ligger nå i ../web (integrert macv2-design).",
+  "description": "Referanse-build - hovedopplevelsen ligger nå i ../web (integrert macv2-design).",
   "scripts": {
     "dev": "next dev -p 3010",
     "build": "next build",

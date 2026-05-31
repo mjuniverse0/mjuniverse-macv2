@@ -17,7 +17,7 @@ export type HubDomain = {
   path: string;
 };
 
-/** Speiler web/lib/domain-config.ts — lenker til hovedhubben. */
+/** Speiler web/lib/domain-config.ts - lenker til hovedhubben. */
 export const hubDomains: HubDomain[] = [
   {
     host: "mj-universe.net",

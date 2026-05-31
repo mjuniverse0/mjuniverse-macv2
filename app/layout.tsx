@@ -22,10 +22,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mj-universe.net"),
   title: {
     default: "MJ Universe",
-    template: "%s · MJ Universe",
+    template: "%s - MJ Universe",
   },
   description:
-    "Offisiell skaperplattform for Mariell Berntzen og Jhonatan Wik — video, live, community og digital hub.",
+    "Offisiell skaperplattform for Mariell Berntzen og Jhonatan Wik - video, live, community og digital hub.",
   openGraph: {
     title: "MJ Universe",
     description:

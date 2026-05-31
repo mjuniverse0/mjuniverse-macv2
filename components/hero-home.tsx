@@ -99,10 +99,10 @@ export function HeroHome() {
               Offisiell creator-plattform
             </p>
             <h1 className="mt-5 max-w-[780px] font-display text-[clamp(2.3rem,7vw,5rem)] font-semibold leading-[0.98] tracking-tight text-white">
-              Mariell &amp; Jhonatan — ett univers for innhold, live og community.
+              Mariell &amp; Jhonatan - ett univers for innhold, live og community.
             </h1>
             <p className="mt-5 max-w-2xl text-[clamp(1rem,1.7vw,1.9rem)] leading-relaxed text-white/70">
-              Logg inn, følg live, stem på polls og utforsk VIP — alt samlet i MJ Universe. Under
+              Logg inn, følg live, stem på polls og utforsk VIP - alt samlet i MJ Universe. Under
               finner du sanntidsdata, video og hurtiglenker.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">

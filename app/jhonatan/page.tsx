@@ -5,7 +5,7 @@ import { HUB } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Jhonatan Wik",
   description:
-    "Eier MJ Universe som virksomhet. Utvikler med lang erfaring i Java og Python — plattform og drift.",
+    "Eier MJ Universe som virksomhet. Utvikler med lang erfaring i Java og Python - plattform og drift.",
 };
 
 export default function JhonatanPage() {
@@ -18,7 +18,7 @@ export default function JhonatanPage() {
             Jhonatan Wik
           </h1>
           <p className="mt-4 text-lg text-mist">
-            Eier MJ Universe som virksomhet. Utvikler (Java + Python) og utøver — plattformen bak universet.
+            Eier MJ Universe som virksomhet. Utvikler (Java + Python) og utøver - plattformen bak universet.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -41,7 +41,7 @@ export default function JhonatanPage() {
             <h2 className="font-display text-lg font-semibold text-white">Om arbeidsformen</h2>
             <p className="mt-3">
               Jhonatan bygger programvare med samme disiplin som i trening: tydelig tenkning, solide fundament og en
-              preferanse for løsninger som faktisk kommer i produksjon — ikke bare presentasjonsark.
+              preferanse for løsninger som faktisk kommer i produksjon - ikke bare presentasjonsark.
             </p>
           </section>
 
@@ -50,7 +50,7 @@ export default function JhonatanPage() {
             <p className="mt-3">
               <span className="font-semibold text-white/90">Java</span> og{" "}
               <span className="font-semibold text-white/90">Python</span> i over{" "}
-              <span className="font-semibold text-white/90">ti år</span> — fra tjenester på serversiden til verktøy,
+              <span className="font-semibold text-white/90">ti år</span> - fra tjenester på serversiden til verktøy,
               automatisering og limet som holder produkter i bevegelse.
             </p>
           </section>

@@ -4,7 +4,7 @@ import { LifeBuoy, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description: "Kontakt og support for MJ Universe — henvisning til hub og supportsider.",
+  description: "Kontakt og support for MJ Universe - henvisning til hub og supportsider.",
 };
 
 export default function KontaktPage() {

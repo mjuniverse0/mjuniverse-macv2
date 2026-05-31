@@ -173,7 +173,7 @@ export function ShopCatalog() {
             <h2 className="font-display text-xl font-semibold text-white">{product.name}</h2>
             <p className="mt-2 text-sm text-mist">{product.description}</p>
             <p className="mt-3 text-xs uppercase tracking-wider text-white/50">
-              {product.group} · MVA {product.mva}
+              {product.group} - MVA {product.mva}
             </p>
             <p className="mt-4 text-lg font-semibold text-white">{product.price}</p>
             <div className="mt-5 grid gap-2">

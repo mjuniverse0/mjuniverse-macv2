@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 export const metadata: Metadata = {
   title: "Universet",
   description:
-    "Oversikt over MJ Universe-domener — hver flate har et formål, alt kobles til samme hub på mj-universe.net.",
+    "Oversikt over MJ Universe-domener - hver flate har et formål, alt kobles til samme hub på mj-universe.net.",
 };
 
 export default function UniversPage() {
@@ -18,7 +18,7 @@ export default function UniversPage() {
         </h1>
         <p className="mt-4 text-mist">
           MJ Universe er én teknisk plattform med flere tydelige innganger. Tabellen under viser hva hvert domene er
-          ment å bære — alle ruter går til hovedappen på mj-universe.net.
+          ment å bære - alle ruter går til hovedappen på mj-universe.net.
         </p>
       </header>
 

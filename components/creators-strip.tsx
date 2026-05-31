@@ -14,7 +14,7 @@ export function CreatorsStrip() {
             Mariell Berntzen
           </h2>
           <p className="mt-3 max-w-md text-sm text-mist">
-            Ansikt utad og skaperinnhold for MJ Universe — ærlig energi på TikTok og i hele universet.
+            Ansikt utad og skaperinnhold for MJ Universe - ærlig energi på TikTok og i hele universet.
           </p>
           <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white/70 group-hover:text-white">
             Les profil
@@ -31,7 +31,7 @@ export function CreatorsStrip() {
             Jhonatan Wik
           </h2>
           <p className="mt-3 max-w-md text-sm text-mist">
-            Eier MJ Universe som virksomhet — Java og Python i tiår; plattform, community og betaling.
+            Eier MJ Universe som virksomhet - Java og Python i tiår; plattform, community og betaling.
           </p>
           <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white/70 group-hover:text-white">
             Les profil
